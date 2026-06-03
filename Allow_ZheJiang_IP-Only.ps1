@@ -25,7 +25,7 @@ foreach ($key in $Urls.Keys) {
 $TotalCount = $AllRegionalIPs.Count
 Write-Host "`n总计获取到浙江省白名单网段: $TotalCount 条。" -ForegroundColor Green
 
-# 3. 【端口修正】定义要保护的端口（3389=远程桌面, 53333=自定义 SQL 1端口1）
+# 3. 【端口修正】定义要保护的端口（3389=远程桌面, 53333=自定义 SQL 1端口2）
 $TargetPorts = @("3389", "53333")
 
 # 4. 先创建或重置【底线黑名单规则】：默认切断所有人访问这些敏感端口
